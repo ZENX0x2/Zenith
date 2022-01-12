@@ -1,5 +1,6 @@
 workspace "Zenith"
     architecture "x64"
+    startproject "Sandbox"
 
     configurations
     {
@@ -37,7 +38,8 @@ project "Zenith"
         defines
         {
             "ZT_PLATFORM_WINDOWS",
-            "ZT_BUILD_DLL"
+            "ZT_BUILD_DLL",
+            "_WINDLL"
         }
 
         postbuildcommands
@@ -74,7 +76,8 @@ project "Sandbox"
 
     includedirs
     {
-        "%{prj.name}/vendor/spdlog/include",
+        "Zenith/vendor/spdlog/include",
+        "Zenith/src/"
         
     }
 
@@ -90,7 +93,8 @@ project "Sandbox"
 
         defines
         {
-            "ZT_PLATFORM_WINDOWS" 
+            "ZT_PLATFORM_WINDOWS",
+            "_WINDLL"
         }
 
     filter "configurations:Debug"
