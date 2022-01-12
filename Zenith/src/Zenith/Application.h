@@ -15,7 +15,6 @@ namespace Zenith
 	};
 
 	// To be defined in client
-	// 16:31 E5
 	Application* CreateApplication();
 }
 

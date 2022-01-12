@@ -6,9 +6,9 @@ extern Zenith::Application* Zenith::CreateApplication();
 
 int main(int argc, char** argv)
 {
-	
-	sandbox->Run();
-	delete sandbox;
+	auto app = Zenith::CreateApplication();
+	app->Run();
+	delete app;
 }
 
 #endif	
