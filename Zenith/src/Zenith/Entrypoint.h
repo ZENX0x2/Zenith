@@ -7,8 +7,8 @@ extern Zenith::Application* Zenith::CreateApplication();
 int main(int argc, char** argv)
 {
 	Zenith::Log::Init();
-	Zenith::Log::GetCoreLogger()->warn("Initialized Log!");
-	Zenith::Log::GetClientLogger()->info("Client logging works!");
+	ZT_CORE_WARN("Core Log Init");
+	ZT_INFO("Client Log Init");
 
 	auto app = Zenith::CreateApplication();
 	app->Run();
