@@ -1,0 +1,3 @@
+[submodule "Zenith/vendor/spdlog"]
+	path = Zenith/vendor/spdlog
+	url = https://github.com/gabime/spdlog
